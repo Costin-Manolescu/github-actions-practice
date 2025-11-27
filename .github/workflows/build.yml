@@ -9,7 +9,7 @@ jobs:
       - name: Run tests
         run: npm test
       - name: Lint code
-        uses: github-actions-practice/lint@v3
+        run: npm run lint
       - name: Build project
         run: npm run build
       - name: Test code
