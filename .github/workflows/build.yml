@@ -9,7 +9,7 @@ jobs:
       - name: Run tests
         run: npm test
       - name: Lint code
-        uses: actions/lint@v3
+        uses: package.json/lint@v3
       - name: Build project
         run: npm run build
       - name: Test code
