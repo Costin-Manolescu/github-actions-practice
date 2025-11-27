@@ -1,0 +1,16 @@
+name: Build project
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test
+      - name: Lint code
+        uses: npm run lint
+      - name: Build project
+        run: npm run build
+      - name: Test code
+        run: npm run test
